@@ -1,5 +1,6 @@
 class JobResult < ActiveRecord::Base
 	belongs_to :keyword
+	validates :keyword_id, presence: true
 	validates :jobtitle, presence: true
 	validates :company, presence: true
 	validates :snippet, presence: true

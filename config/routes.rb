@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :job_results
-
   resources :keywords
 
   # The priority is based upon order of creation: first created -> highest priority.
