@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140920021944) do
+ActiveRecord::Schema.define(version: 20140920024145) do
 
   create_table "job_results", force: true do |t|
     t.string   "jobtitle"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20140920021944) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "job_results", ["url"], name: "index_job_results_on_url", unique: true
 
   create_table "keywords", force: true do |t|
     t.string   "search_term"
