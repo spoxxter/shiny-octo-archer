@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Jobtitle:</strong>
+  <%= @job_result.jobtitle %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job_result.company %>
+</p>
+
+<p>
+  <strong>Snippet:</strong>
+  <%= @job_result.snippet %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @job_result.url %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @job_result.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @job_result.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_job_result_path(@job_result) %> |
+<%= link_to 'Back', job_results_path %>

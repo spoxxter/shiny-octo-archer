@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Search term:</strong>
+  <%= @keyword.search_term %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @keyword.location %>
+</p>
+
+<%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+<%= link_to 'Back', keywords_path %>
